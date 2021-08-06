@@ -7,11 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HumanController {
-	
-//	public static void main(String[] args) {
-//		SpringApplication.run(HellohumanApplication.class, args);
-//		
-//	}
+
 	
 	@RequestMapping("/")
     public String index(@RequestParam(value="q", required=false) String firstName, @RequestParam(value="n", required=false) String lastName) {
